@@ -1,0 +1,696 @@
+
+
+
+/* CALENDAR SHELL STYLES */
+
+div.day{
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    border-color: RGB(200,200,200);
+    background-color: RGB(250,250,250);
+	position:relative;
+	height: 100%;
+	width:14.2857143%;
+}
+
+div.week{
+	position:relative;
+	margin-left:0%;
+	height:18%;
+	width:100%;
+}
+
+div.month{
+	border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: RGB(180,180,180);
+    margin-left: 1.5%;
+	width:97%;
+}
+
+div.top{
+	border-width: 0px 1px 0px 0px !important;
+}
+
+div.right{
+	border-width: 1px 0px 0px 0px !important;
+}
+
+div.top-right{
+	border-width: 0px 0px 0px 0px !important;
+}
+
+div.labelContainer{
+	margin: 2% 0 0 1.5%;
+	width:97%;
+}
+
+div.weekLabel{
+	width:14.2857143%;
+	text-align: center;
+	font-size: 1.75vw;
+}
+
+div.monthLabel{
+	font-size: 2.75vw;
+	text-align: center;
+}
+
+div.dayNum{
+	position:relative;
+	width: 25%;
+	margin: 10% 0% 0% 65%;
+	height: 10%;
+	font-size: 1.8vw;
+	color: RGB(120,120,120);
+	text-align: right;
+}
+
+div.test{
+	margin-left:25%;
+	width:50%;
+	height:500px!important;
+}
+
+div.button,
+div.low-button{
+	height:3vw;
+	font-size:2vw;
+}
+
+div.low-button{
+	margin-right: .5%;
+}
+
+div.left {
+	text-align: left;
+}
+
+div.right {
+	text-align: right;
+}
+
+div.medWide{
+	margin-left:17%;
+	width:66%;
+}
+
+div.autoWide{
+	width:auto;
+}
+
+
+
+/* MODAL STYLES */
+
+.modalWider{
+	width: 90%;
+	margin-left: 5%;
+}
+
+/* REQUEST APPT SLIDER BLOCK */
+
+div.subheader{
+	margin-top:1em;
+}
+
+div.timeslot{
+	width:100%;
+	height: auto;
+    border-width: 0 0 .75px 0;
+    border-style: dashed;
+    border-color: RGB(240,240,240);
+    background-color: RGB(253,253,253);
+    text-align:center;
+}
+
+div.slotContents{
+	height:auto;
+  	position: relative;
+  	top: 50%;
+}
+
+.slotNumber{
+	display:inline;
+	height:auto;
+	font-size: 1.2em;
+}
+
+.startNumber{
+	color: RGB(100,225,100);
+}
+
+.endNumber{
+	color: RGB(255,215,10);
+}
+
+button.slotButton, 
+button.requestButton {
+	margin-top:0em;
+	float:left!important;
+}
+
+div.timeSlider{
+	margin:8em 0 5em 0;
+	height: auto;
+}
+
+div.slideRange{
+	position:relative;
+	top:20%;
+	margin-left:12.5%;
+	width: 75%;
+	height: 1.4em;
+	display:block;
+}
+
+div.slideLabels{
+	text-align: center;
+	position:relative;
+	margin-left:11.5%;
+	width: 85%;
+	height: 1.4em;
+	display:block;	
+	margin-top:7.5%;
+}
+
+div.slideLabel{
+	width:auto;
+	display:inline-block;
+	font-size:1.55em;
+	position:relative;
+	height:100%;
+}
+
+
+
+
+/* PICK TIME SLIDER BLOCK */
+
+div.sliderContainerVertical {
+	height:33em;	
+}
+
+/* pickLabel */
+div.sliderContainerVertical > ul {
+	position:relative;
+	height: 108%;
+	float:left;
+	margin-left: 25%;
+	width: 5%;
+	margin-right:5%;
+	display:inline-block;
+}
+
+div.sliderContainerVertical > ul > li {
+	text-align:left;
+	top:-.9em;
+	position:relative;
+	height: 8.3333333%;
+	font-size: 1.8em;
+	opacity:.5;
+	width:2em;
+}
+
+div.pickSlider{
+	display:inline-block;
+	position:relative;
+	margin-left:10%;
+	width:10% !important;
+}
+
+div.inputTextContainer{
+	position:relative;
+	margin-top: 2em;
+	width:100%;
+	height:auto;
+}
+
+
+input.pickInputText{
+	position: relative;
+	width: 100%;
+	height: 3em;
+	font-size: 4em;
+	border:none!important;
+}
+
+div.colon{
+	text-align:center;
+	top: .75em;
+	position:relative;
+	height: 3em;
+	font-size: 4em;	
+	width:auto;
+	opacity:.5;
+}
+
+div.pickTimeSlot{
+	top: 3em;
+	height: auto;
+}
+
+div.selectText{
+	font-size:2em;
+	/*color: RGB(100,225,100);	*/
+}
+
+div.selectText > select {
+	position:relative;
+	height: 10%;
+	margin-top: 7em;
+	margin-left: 12.5%;
+	width: 75%;	
+}
+
+div.pickElements{
+	margin-top: 4em!important;
+}
+
+button.pickTimeButton {
+	margin-left:-4em;
+	margin-top:2em;
+	font-size: 2em;
+}
+
+.labelText{
+	margin-top:2.2em;
+	text-align:right;
+	font-size:2em;
+}
+
+
+
+/* Overwrites to jquery UI slider styles */
+
+.customSliderHandle {
+	top:-1.9em !important;
+	width:5em !important;
+	height:5em !important;
+	border-top-left-radius: 2.5em;
+	border-top-right-radius: 2.5em;
+	border-bottom-left-radius: 2.5em;
+	border-bottom-right-radius: 2.5em;
+   	outline: none !important;
+}
+
+.customSliderHandle-Vertical {
+	position:absolute;
+	margin-left: -40px;
+	width:7.5em !important;
+	height:7.5em !important;
+	border-top-left-radius: 5.5em;
+	border-top-right-radius: 5.5em;
+	border-bottom-left-radius: 2.5em;
+	border-bottom-right-radius: 5.5em;
+   	outline: none !important;
+}
+
+.handleText {
+	text-align: center;
+	font-size: 1.35em;
+	z-index:5;
+	
+}
+
+.handleText-Vertical {
+	top: .5em;
+	position:relative;
+	text-align: center;
+	font-size: 2em;
+	
+}
+
+
+
+/* Pick Times with Clickable Divs */
+
+div.clickableContainer{
+	overflow:hidden;
+	width:100%;
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    border-color: RGB(200,200,200);
+	border-top-left-radius: 5.5em;
+	border-top-right-radius: 5.5em;
+	border-bottom-left-radius: 5.5em;
+	border-bottom-right-radius: 5.5em;
+}
+
+.am {
+	background-color:rgba(213,244,255,.75);
+	border-top-left-radius: 5.5em;
+	border-bottom-left-radius: 5.5em;
+}
+
+.pm{
+	background-color:rgba(255,244,213,.75);
+	border-top-right-radius: 5.5em;
+	border-bottom-right-radius: 5.5em;	
+}
+
+.noPadding {
+	margin-left: 0!important;
+	margin-right: 0!important;
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+
+span.timelineLabel {
+	text-align: center;
+	display:block;
+	position:relative;
+	font-size:3.2em;
+}
+
+div.hourBox{
+	vertical-align:bottom;
+	position:relative;
+	display:inline-block !important;
+	text-align:center;
+	width:50%;
+	font-size:3em;
+    border-width: .5px 0px .5px 0px;
+    border-style: solid;	
+	border-color: rgba(150,150,150,.5);
+	border-top-left-radius: .5em;
+	border-top-right-radius: .5em;
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;	
+}
+
+.left-edge{
+	position:relative;
+	border-bottom-left-radius: 5.5em!important;
+}
+
+.right-edge{
+	position:relative;
+	border-bottom-right-radius: 5.5em!important;
+}
+
+
+
+/* Styles for the schedule manager timeline view */ 
+
+div.schedContainer{
+	height: 50em!important;
+}
+
+div.schedBorder {
+    border-width: 3px 3px 3px 3px;
+    color: rgba(115,115,115,.9);
+    border-style: solid;	
+	border-color: rgba(75,75,75,.9);
+	border-top-left-radius: .5em;
+	border-top-right-radius: .5em;
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;		
+}
+
+div.leftBorder {
+	border-left-width:.2em; 
+	border-left-style:dotted;
+}
+
+div.topRow{
+	height: auto;
+	margin-bottom:3em;
+	margin-top: 1em;
+}
+
+div.header {
+	font-size: 2.5em;	
+	position:relative;
+	text-align: center;
+}
+
+span.headerNumber {
+	font-style:bold;
+	margin: 1em 0 1em 0;
+	color: rgba(100,100,175,.9);
+	display:inline-block;
+}
+
+div.midRow{
+	height: auto;
+	margin-left:.5em;
+	margin-right:.5em;	
+}
+
+div.hourMargin{
+	margin-left:1em;
+	margin-right:1em;
+}
+
+div.oneHour{
+	position:relative;
+    border-right-width: .2em ;
+    border-right-style: dotted;	
+	border-color: rgba(225,225,225,.9);	
+}
+
+div.schedTop{
+	height:33.333%;
+}
+
+div.schedBottom{
+	height:10%;
+}
+
+
+div.sliderContainer{
+	height:0em;
+}
+
+
+div.schedSlider{
+	border-left:0px!important;
+	border-right:0px!important;
+	width:100%;
+	position:relative;
+	height:2em;
+	margin-top:0em;
+}
+
+div.schedSlider > span {
+	/*
+	position:relative;
+	color:blue;
+	margin-left:-.25em !important;
+	*/
+}
+
+span.numLine{
+	height:auto;
+	position:relative;
+	z-index:2;
+	text-align:left;
+	font-size:1.25em;
+    color: rgba(115,115,115,.9);
+}
+
+div.tickMark{
+	position:relative;
+    border-right-width: .2em ;
+    border-right-style: dotted;	
+	border-color: rgba(225,225,225,.9);	
+}
+
+div.midLen{
+	top: 80%;
+	height: 20%;
+}
+
+div.lrgLen{
+	top:55%;
+	height:45%;
+}
+
+span.tickNum{
+	display:inline-block;
+	font-style:bold;
+	font-size: 1.15em;
+	margin-top:-1.75em !important;
+	margin-left:.3em !important;
+}
+
+div.leftLine{
+	position:absolute;
+    border-right-width: 1px ;
+    border-right-style: solid;	
+	border-color: rgba(50,50,255,.75);	
+	width:0em !important;
+	margin-left:1.9em;
+}
+
+div.lineTop{
+	height: 12em; /*24% of the 50em height for schedContainer, the only hard-coded height for these styles*/
+	margin-top: -12em; /*- 24% of height for schedContainer*/	
+
+}
+
+div.lineBottom{
+	height: 3.8em; /* %7.6 of the height for schedContainer*/
+	margin-top: 5.9em; /* %11.8 of the height for schedContainer*/	
+}
+
+div.buttonRow{
+	margin-left:.5em ;
+	height:2em!important;
+	margin-top:1em;
+}
+
+div.buttonBorder{
+	height: auto;
+}
+
+button.schedButton{
+	text-align:center;
+	position:relative;
+	width: 50%;
+	margin-left: 25% !important;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	height: 2em;
+	font-size: 1.5em;
+}
+
+div.timeOverlay{
+	position:absolute;
+	background-color: rgba(217,203,217,.75);
+	height: 7em;
+	z-index: 6;
+}
+
+.schedSliderHandle {
+	position:absolute;
+	margin-left: -2.1em !important; 
+	margin-top: -3em !important;
+	width:4.2em !important;
+	height:6em !important;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+   	outline: none !important;
+}
+
+/*	For reference, these are the original slider handle's settings, from the jQuery ui smoothness css file: ;
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #d3d3d3;
+	background: #e6e6e6 url("images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+	font-weight: normal;
+	color: #555555;
+}
+
+...... Corner radius 
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 4px;
+}
+*/
+
+
+
+/* ARROW BUTTON STYLES */
+
+.btn { /* just for this demo. */
+    margin-top: 5px;
+}
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+.btn-arrow-right,
+.btn-arrow-left {
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.btn-arrow-right {
+    padding-left: 36px;
+}
+.btn-arrow-left {
+    padding-right: 36px;
+}
+.btn-arrow-right:before,
+.btn-arrow-right:after,
+.btn-arrow-left:before,
+.btn-arrow-left:after { /* make two squares (before and after), looking similar to the button */
+    content:"";
+    position: absolute;
+    top: 5px; /* move it down because of rounded corners */
+    width: 22px; /* same as height */
+    height: 22px; /* button_outer_height / sqrt(2) */
+    background: inherit; /* use parent background */
+    border: inherit; /* use parent border */
+    border-left-color: transparent; /* hide left border */
+    border-bottom-color: transparent; /* hide bottom border */
+    border-radius: 0px 4px 0px 0px; /* round arrow corner, the shorthand property doesn't accept "inherit" so it is set to 4px */
+    -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+}
+.btn-arrow-right:before,
+.btn-arrow-right:after {
+    transform: rotate(45deg); /* rotate right arrow squares 45 deg to point right */
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+.btn-arrow-left:before,
+.btn-arrow-left:after {
+    transform: rotate(225deg); /* rotate left arrow squares 225 deg to point left */
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+}
+.btn-arrow-right:before,
+.btn-arrow-left:before { /* align the "before" square to the left */
+    left: -11px;
+}
+.btn-arrow-right:after,
+.btn-arrow-left:after { /* align the "after" square to the right */
+    right: -11px;
+}
+.btn-arrow-right:after,
+.btn-arrow-left:before { /* bring arrow pointers to front */
+    z-index: 1;
+}
+.btn-arrow-right:before,
+.btn-arrow-left:after { /* hide arrow tails background */
+    background-color: white;
+}

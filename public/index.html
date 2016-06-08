@@ -1,0 +1,739 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" >
+    <link href="public/resource/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">  
+      <div class="container-fluid">
+        <div class="row labelContainer">
+          <div class="col-md-4 button left">
+            <button type="button" class="btn btn-default btn-arrow-left" onclick="changeMonth('previous')">Previous Month</button>
+          </div>        
+          <div class="col-md-4 monthLabel">
+          </div>
+          <div class="col-md-4 button right">
+            <button type="button" class="btn btn-default btn-arrow-right" onclick="changeMonth('next')">Next Month</button>
+          </div>          
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row labelContainer">
+          <div class="col-md-1 weekLabel">Sunday</div>
+          <div class="col-md-1 weekLabel">Monday</div>
+          <div class="col-md-1 weekLabel">Tuesday</div>
+          <div class="col-md-1 weekLabel">Wednesday</div>
+          <div class="col-md-1 weekLabel">Thursday</div>
+          <div class="col-md-1 weekLabel">Friday</div>
+          <div class="col-md-1 weekLabel">Saturday</div>      
+        </div>
+      </div>  
+      <div class="container-fluid">
+        <div id="month" class="month">
+          <div id="week0" class="row week">
+                <div id="day0" class="col-md-1 col-md-offset-0 day default top" data-placement="top">
+                   <div id="dayNum0" class="dayNum"></div>   
+                </div>
+                <div id="day1" class="col-md-1 day default top" data-placement="top">
+                   <div id="dayNum1" class="dayNum"></div>   
+                </div>
+                <div id="day2" class="col-md-1 day default top" data-placement="top">
+                   <div id="dayNum2" class="dayNum"></div>   
+                </div>
+                <div id="day3" class="col-md-1 day default top" data-placement="top">
+                   <div id="dayNum3" class="dayNum"></div>   
+                </div>
+                <div id="day4" class="col-md-1 day default top" data-placement="top">
+                   <div id="dayNum4" class="dayNum"></div>   
+                </div>
+                <div id="day5" class="col-md-1 day default top" data-placement="top">
+                   <div id="dayNum5" class="dayNum"></div>   
+                </div>
+                <div id="day6" class="col-md-1 day default top-right" data-placement="top">
+                   <div id="dayNum6" class="dayNum"></div>   
+                 </div>
+          </div>  
+          <div id="week1" class="row week">
+                <div id="day7" class="col-md-1 col-md-offset-0 day default" data-placement="top">
+                   <div id="dayNum7" class="dayNum"></div>   
+                </div>
+                <div id="day8"class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum8" class="dayNum"></div>   
+                </div>
+                <div id="day9" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum9" class="dayNum"></div>   
+                </div>
+                <div id="day10" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum10" class="dayNum"></div>   
+                </div>
+                <div id="day11" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum11" class="dayNum"></div>   
+                </div>
+                <div id="day12" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum12" class="dayNum"></div>   
+                </div>
+                <div id="day13" class="col-md-1 day default right" data-placement="top">
+                   <div id="dayNum13" class="dayNum"></div>   
+                 </div>
+          </div>   
+          <div id="week2" class="row week">
+                <div id="day14" class="col-md-1 col-md-offset-0 day default" data-placement="top">
+                   <div id="dayNum14" class="dayNum"></div>   
+                </div>
+                <div id="day15"class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum15" class="dayNum"></div>   
+                </div>
+                <div id="day16" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum16" class="dayNum"></div>   
+                </div>
+                <div id="day17" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum17" class="dayNum"></div>   
+                </div>
+                <div id="day18" class="col-md-1 day default default" data-placement="top">
+                   <div id="dayNum18" class="dayNum"></div>   
+                </div>
+                <div id="day19" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum19" class="dayNum"></div>   
+                </div>
+                <div id="day20" class="col-md-1 day default right" data-placement="top">
+                   <div id="dayNum20" class="dayNum"></div>   
+                 </div>
+          </div>  
+          <div id="week3" class="row week">
+                <div id="day21" class="col-md-1 col-md-offset-0 day default" data-placement="top">
+                   <div id="dayNum21" class="dayNum"></div>   
+                </div>
+                <div id="day22" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum22" class="dayNum"></div>   
+                </div>
+                <div id="day23" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum23" class="dayNum"></div>   
+                </div>
+                <div id="day24" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum24" class="dayNum"></div>   
+                </div>
+                <div id="day25" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum25" class="dayNum"></div>   
+                </div>
+                <div id="day26" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum26" class="dayNum"></div>   
+                </div>
+                <div id="day27" class="col-md-1 day default right" data-placement="top">
+                   <div id="dayNum27" class="dayNum"></div>   
+                 </div>
+          </div>  
+          <div id="week4" class="row week">
+                <div id="day28" class="col-md-1 col-md-offset-0 day default" data-placement="top">
+                   <div id="dayNum28" class="dayNum"></div>   
+                </div>
+                <div id="day29"class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum29" class="dayNum"></div>   
+                </div>
+                <div id="day30" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum30" class="dayNum"></div>   
+                </div>
+                <div id="day31" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum31" class="dayNum"></div>   
+                </div>
+                <div id="day32" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum32" class="dayNum"></div>   
+                </div>
+                <div id="day33" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum33" class="dayNum"></div>   
+                </div>
+                <div id="day34" class="col-md-1 day default right" data-placement="top">
+                   <div id="dayNum34" class="dayNum"></div>   
+                 </div>
+          </div>  
+          <div id="week5" class="row week spillover">
+                <div id="day35" class="col-md-1 col-md-offset-0 day default" data-placement="top">
+                   <div id="dayNum35" class="dayNum"></div>   
+                </div>
+                <div id="day36"class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum36" class="dayNum"></div>   
+                </div>
+                <div id="day37" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum37" class="dayNum"></div>   
+                </div>
+                <div id="day38" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum38" class="dayNum"></div>   
+                </div>
+                <div id="day39" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum39" class="dayNum"></div>   
+                </div>
+                <div id="day40" class="col-md-1 day default" data-placement="top">
+                   <div id="dayNum40" class="dayNum"></div>   
+                </div>
+                <div id="day41" class="col-md-1 day default right" data-placement="top">
+                   <div id="dayNum41" class="dayNum"></div>   
+                </div>
+          </div> 
+        </div> 
+      </div>
+      <!-- Modal -->
+      <div class="modal fade medWide" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog autoWide" role="document">
+          <div class="modal-content">
+            <div class="modal-header" >
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" style="font-size:2.1em" id="myModalLabelOne">
+                <div id="modalTitleName" class="" style="display:inline-block"></div> has the following openings for <div id="modalTitleDateOne" class="modalTitleDate" style="display:inline-block"></div> 
+              </h4>
+              <h4 class="modal-title" style="font-size:2.1em; display:none" id="myModalLabelTwo">
+                Choose The Start and End Time For Your Appointment on <div id="modalTitleDateTwo" class="modalTitleDate" style="display:inline-block"></div> 
+              </h4>
+              <h4 class="modal-title" style="font-size:2.1em; display:none" id="myModalLabelThree">
+                <span id="modalTitlePickText" style="display:inline-block">Choose A Start Time For</span> 
+                <div id="modalTitleDatePick" class="modalTitleDate" style="display:inline-block"></div> 
+              </h4>                                              
+            </div>
+            <div id="modalBody" class="modal-body" style="height:auto">
+            </div>
+            <div class="modal-footer">
+              <button id="modalCloseButton" type="button" class="btn btn-default modalClose" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary modalSubmit" style="display:none">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <br>
+
+    <!-- This hidden div will be cloned, customized, and appended onto .modal-body -->
+    <div id="timeslotShell" class="timeslot row" style="display:none">
+      <div class="container-fluid slotContents" id="slotContents">
+        <span class="col-md-4"> Listing <div class="slotNumber listNum">*Listing No.*</div>: From <div class="slotNumber startNumber slotStartShell"> *Start Time* </div> until 
+          <div class="slotNumber endNumber slotEndShell"> *End Time* </div> </span> 
+        <div class="col-md-8"> 
+          <div class="col-md-4">
+            <button type="button" class="btn btn-md btn-info slotButton">
+              Choose A Time From Within These Hours
+            </button>
+          </div>          
+        </div>
+        <div id="timeSliderShell" class="collapse timeSlider">
+          <div id="slider-range" class="slideRange row"></div>
+          <div id="slideLabels" class="slideLabels slideRange row">
+            <div class="row" style="font-size:1.5em">
+              Start Time: <div class="slideStartLabel slideLabel startNumber"></div> 
+            </div>
+            <div class="row" style="font-size:1.5em">
+              End Time: <div class="slideEndLabel slideLabel endNumber"></div> 
+            </div>
+            <div class="row" style="font-size:1.5em; width:100%">
+              <div class="col-md-4 col-md-offset-4" style="text-align:center; margin-top:4%">
+                <button type="button" class="btn btn-md btn-info requestButton" style="display:none; margin: 5% 0 0 0; height: 3em; font-size: 1em">
+                  Request This Apppointment
+                </button>
+              </div>
+            </div>                           
+          </div>
+          <div></div>  
+        </div>          
+      </div>
+      <br><br>
+    </div>
+
+    <!-- This shell is used to pick a time slot for a given day with two vertical sliders -->
+    <div id="pickTimeShell" class="row default" style="display:none">
+      <div id="pickContentsShell" class="container-fluid">
+        <div id="pickTimeSlot" class="pickTimeSlot">
+          <div class="pickElements row">
+            <div class="col-md-4 sliderContainerVertical">
+              <ul class="pickLabel" style="list-style-type:none">
+                <li>12</li>
+                <li>11</li>
+                <li>10</li>
+                <li>9</li>
+                <li>8</li>
+                <li>7</li>
+                <li>6</li>
+                <li>5</li>
+                <li>4</li>
+                <li>3</li>
+                <li>2</li>
+                <li>1</li>                
+              </ul>
+              <div id="pickHourSlider" style="height:100%" class="pickSlider col-md-4"></div>
+            </div>
+            <div class="col-md-4 sliderContainerVertical">
+              <ul class="pickLabel" style="list-style-type:none">
+                <li>55</li>
+                <li>50</li>
+                <li>45</li>
+                <li>40</li>
+                <li>35</li>
+                <li>30</li>
+                <li>25</li>
+                <li>20</li>
+                <li>15</li>
+                <li>10</li>
+                <li>05</li>
+                <li>00</li>                
+              </ul>   
+              <div id="pickMinuteSlider" style="height:100%" class="pickSlider col-md-4"></div>                         
+            </div>
+            <div class="col-md-4 selectText startNumber reuse">
+              <select id="pickAmPmSelect" class="pickSelect">
+                <option selected disabled>AM or PM</option>
+                <option value="AM" >AM</option>
+                <option value="PM">PM</option>              
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="hiddenTextContainer" class="row inputTextContainer" style="display:none">
+          <div class="col-md-3 labelText">
+            Your start time is:
+          </div>
+          <div class="col-md-2">
+            <input id="hiddenPickHours" type="text" class="pickInputText startNumber" placeholder="Hour" style="text-align:right; width:120%"></input>
+          </div>
+          <div class="col-md-1 colon">
+            :
+          </div>
+          <div id="hiddenPickMinutesContainer" class="col-md-1">  
+            <input id="hiddenPickMinutes" type="text" class="pickInputText startNumber" placeholder="Minutes" style="text-align:left; width:120%"></input>    
+          </div>
+          <div class="col-md-3" >  
+            <input id="hiddenPickAmPm" type="text" class="pickInputText startNumber" placeholder="AM/PM" style="text-align:left"></input>            
+          </div>          
+        </div>
+        <div class="row inputTextContainer">
+          <div id="endTimeLabel" class="col-md-3 labelText" style="visibility:hidden">
+            Your end time is:
+          </div>          
+          <div class="col-md-2">
+            <input id="pickHours" type="text" class="pickInputText startNumber reuse" placeholder="Hour" style="text-align:right; width:120%"></input>
+          </div>
+          <div class="col-md-1 colon">
+            :
+          </div>
+          <div id="pickMinutesContainer" class="col-md-3">  
+            <input id="pickMinutes" type="text" class="pickInputText startNumber reuse" placeholder="Minutes" style="text-align:left; width:120%"></input>    
+          </div>
+          <div class="col-md-3" >  
+            <input id="pickAmPm" type="text" class="pickInputText startNumber reuse" placeholder="AM/PM" style="text-align:left"></input>            
+          </div>
+          <div class="col-md-2" >  
+            <button id="pickTimeButton" class="btn btn-lg btn-info pickTimeButton" style="display:none">Submit This Time</button>            
+          </div>          
+        </div>
+      </div>
+      <!--
+      <div id="pickTimeReview" class="row" style="display:none">
+        <div class="col-md-3 col-md-offset-4">Your Start Time:</div><div style="background-color:blue" class="col-md-4 col-md-offset-1 startNumber"></div>
+        <div class="col-md-3 col-md-offset-4">Your End Time:</div><div style="background-color:red" class="col-md-4 col-md-offset-1 startNumber"></div>
+      </div> --> 
+    </div> 
+         
+    <!-- Shell for the user to pick times from two rows of clickable divs -->      
+    <div id="clickableShell" class="container-fluid clickableContainer" style="display:none">  
+      <div class="row">
+        <div class="col-md-6 noPadding am">
+          <span class="col-md-12 noPadding timelineLabel">am</span>
+          <div class="col-md-2 noPadding">
+            <div class="hourBox left-edge">12</div><div class="hourBox">1</div>          
+          </div>
+          <div class="col-md-2 noPadding">
+            <div class="hourBox">2</div><div class="hourBox">3</div>          
+          </div>  
+          <div class="col-md-2 noPadding">
+            <div class="hourBox">4</div><div class="hourBox">5</div>          
+          </div>
+          <div class="col-md-2 noPadding">
+            <div class="hourBox">6</div><div class="hourBox">7</div>          
+          </div>
+          <div class="col-md-2 noPadding">
+            <div class="hourBox">8</div><div class="hourBox">9</div>          
+          </div>
+          <div class="col-md-2 noPadding">
+            <div class="hourBox">10</div><div class="hourBox">11</div>          
+          </div>
+          <div id="clickableAmMinutes" class="col-md-12" style="display:none"> 
+            <div class="col-md-2 noPadding">
+              <div class="hourBox left-edge">00</div><div class="hourBox">05</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">10</div><div class="hourBox">15</div>          
+            </div>  
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">20</div><div class="hourBox">25</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">30</div><div class="hourBox">35</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">40</div><div class="hourBox">45</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">50</div><div class="hourBox">55</div>          
+            </div>            
+          </div>          
+        </div>
+        <div class="col-md-6 noPadding pm">        
+          <span class="col-md-12 noPadding timelineLabel">pm</span>
+          <div class="col-md-12 noPadding">
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">12</div><div class="hourBox">1</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">2</div><div class="hourBox">3</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">4</div><div class="hourBox">5</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">6</div><div class="hourBox">7</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">8</div><div class="hourBox">9</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">10</div><div class="hourBox right-edge">11</div>          
+            </div>
+          </div>
+          <div id="clickablePmMinutes" class="col-md-12" style="display:none"> 
+            <div class="col-md-2 noPadding">
+              <div class="hourBox left-edge">00</div><div class="hourBox">05</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">10</div><div class="hourBox">15</div>          
+            </div>  
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">20</div><div class="hourBox">25</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">30</div><div class="hourBox">35</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">40</div><div class="hourBox">45</div>          
+            </div>
+            <div class="col-md-2 noPadding">
+              <div class="hourBox">50</div><div class="hourBox">55</div>          
+            </div>            
+          </div> 
+        </div>                                                                                             
+      </div>
+    </div>
+
+    <!-- For the manage schedule mode, looks like a ruler with sliders to choose time on the bottom and reserved times above. -->
+    <div id="scheduleShell" class="container-fluid schedContainer" style="display:none">
+      <div id="headerRow" class="row topRow">
+        <div id="headerDiv" class="col-md-6 col-md-offset-3 header schedBorder"> Manage Your Schedule for 
+          <span id="headerMonth" class="headerNumber">6</span> / <span id="headerDay" class="headerNumber"> 12 </span> / <span id="headerYear" class="headerNumber"> 2016 </span>
+        </div>
+      </div>
+      <div id="bodyRow" class="row midRow">
+        <div class="col-md-12 schedBody schedBorder noPadding">
+          <!-- Top third portion of the body-->          
+          <div id="topRow" class="row hourMargin">
+            <div class="col-md-1 noPadding ">
+              <div id="12amTop" class="col-md-6 oneHour schedTop noPadding leftBorder"></div>
+              <div id="1amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="2amTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="3amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="4amTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="5amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="6amTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="7amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="8amTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="9amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="10amTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="11amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding">
+              <div id="12pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="1pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="2pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="3pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="4pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="5pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="6pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="7pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="8pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="9pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="10pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="11pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+          </div>      
+          <!-- Middle third portion of the body, contains the slider.-->
+          <div class="row hourMargin sliderContainer">
+              <div id="scheduleSlider" class="col-md-12 noPadding schedSlider">
+                <span class="col-md-12 noPadding">
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">12</span>
+                    <span class="col-md-6 noPadding numLine">1</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">2</span>
+                    <span class="col-md-6 noPadding numLine">3</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">4</span>
+                    <span class="col-md-6 noPadding numLine">5</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">6</span>
+                    <span class="col-md-6 noPadding numLine">7</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">8</span>
+                    <span class="col-md-6 noPadding numLine">9</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">10</span>
+                    <span class="col-md-6 noPadding numLine">11</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">12</span>
+                    <span class="col-md-6 noPadding numLine">1</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">2</span>
+                    <span class="col-md-6 noPadding numLine">3</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">4</span>
+                    <span class="col-md-6 noPadding numLine">5</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">6</span>
+                    <span class="col-md-6 noPadding numLine">7</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">8</span>
+                    <span class="col-md-6 noPadding numLine">9</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">10</span>
+                    <span class="col-md-6 noPadding numLine">11</span>                    
+                  </span>       
+                </span>
+              </div>
+          </div>
+          <!-- Bottom third portion of the body -->
+          <div class="row hourMargin">
+            <div class="col-md-1 noPadding ">
+              <div id="12amBottom" class="col-md-6 oneHour schedBottom noPadding leftBorder">             
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>               
+              </div>
+              <div id="1amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="2amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="3amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="4amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="5amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="6amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="7amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="8amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="9amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="10amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="11amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding">
+              <div id="12pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="1pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="2pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="3pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="4pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="5pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="6pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="7pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="8pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="9pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="10pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="11pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+          </div>        
+        </div>
+      </div>
+      <div id="buttonRow" class="row noPadding buttonRow">
+        <div class="col-md-3 button left">
+          <button id="prevSchedButton" class="btn btn-default btn-arrow-left changeDay">Manage the Previous Day</button>
+        </div>
+        <div class="col-md-6">        
+          <button id="schedButton" class="btn btn-primary btn-lrg schedButton">Add this to your schedule</button> 
+        </div>
+        <div class="col-md-offset-3 low-button right">                   
+          <button id="nextSchedButton" class="btn btn-default btn-arrow-right changeDay">Manage the Next Day</button>
+        </div>
+      </div>            
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    <script src="public/js/initGlobalVariables.js"></script>        
+    <script src="public/js/initCalendarShell.js"></script>    
+    <script src="public/js/organizeData.js"></script>
+    <script src="public/js/requestAppointment.js"></script>
+    <script src="public/js/manageSchedule.js"></script>
+    <script src="public/js/pickTimeVerticalSliders.js"></script>
+    <script src="public/js/clickTimesEXTRA.js"></script>
+    <script src="public/js/mainFn.js"></script>
+
+    <script type="text/javascript">
+
+    /* ====================================*/
+    //
+    //    FUNCTION INTRO: Basic Pattern is:
+    //
+    //                      1) Determine what mode the user wants. 
+    //                     1-A) If the mode requires data from an AJAX get request, organize that data.
+    //                      2) Stylize the HTML markup to create a calendar shell for one month at a time (the same for all modes).
+    //                      3) Customize the calendar shell according to the mode, making it interactive. 
+    //
+    //                    Note that steps 1 and 2 are independent, and do not directly rely on each other. When the interactivity of step 3 results in   
+    //
+    // ------------------------------------//
+
+    // Show the calendar in request Appointment Mode. 
+    $(appointmentCalendar("manageScheduleMode", myTimes));
+
+
+    </script>
+  </body>
+</html>

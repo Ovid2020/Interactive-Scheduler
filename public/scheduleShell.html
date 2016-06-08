@@ -1,0 +1,276 @@
+    <!-- For the manage schedule mode, looks like a ruler with sliders to choose time on the bottom and reserved times above. -->
+    <div id="scheduleShell" class="container-fluid schedContainer" style="display:none">
+      <div id="headerRow" class="row topRow">
+        <div id="headerDiv" class="col-md-6 col-md-offset-3 header schedBorder"> Manage Your Schedule for 
+          <span id="headerMonth" class="headerNumber">6</span> / <span id="headerDay" class="headerNumber"> 12 </span> / <span id="headerYear" class="headerNumber"> 2016 </span>
+        </div>
+      </div>
+      <div id="bodyRow" class="row midRow">
+        <div class="col-md-12 schedBody schedBorder noPadding">
+          <!-- Top third portion of the body-->          
+          <div id="topRow" class="row hourMargin">
+            <div class="col-md-1 noPadding ">
+              <div id="12amTop" class="col-md-6 oneHour schedTop noPadding leftBorder"></div>
+              <div id="1amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="2amTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="3amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="4amTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="5amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="6amTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="7amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="8amTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="9amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="10amTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="11amTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding">
+              <div id="12pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="1pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="2pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="3pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="4pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="5pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="6pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="7pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="8pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="9pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="10pmTop" class="col-md-6 oneHour schedTop noPadding"></div>
+              <div id="11pmTop" class="col-md-6 oneHour schedTop noPadding"></div>            
+            </div>
+          </div>      
+          <!-- Middle third portion of the body, contains the slider.-->
+          <div class="row hourMargin sliderContainer">
+              <div id="scheduleSlider" class="col-md-12 noPadding schedSlider">
+                <span class="col-md-12 noPadding">
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">12</span>
+                    <span class="col-md-6 noPadding numLine">1</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">2</span>
+                    <span class="col-md-6 noPadding numLine">3</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">4</span>
+                    <span class="col-md-6 noPadding numLine">5</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">6</span>
+                    <span class="col-md-6 noPadding numLine">7</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">8</span>
+                    <span class="col-md-6 noPadding numLine">9</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">10</span>
+                    <span class="col-md-6 noPadding numLine">11</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">12</span>
+                    <span class="col-md-6 noPadding numLine">1</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">2</span>
+                    <span class="col-md-6 noPadding numLine">3</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">4</span>
+                    <span class="col-md-6 noPadding numLine">5</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">6</span>
+                    <span class="col-md-6 noPadding numLine">7</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">8</span>
+                    <span class="col-md-6 noPadding numLine">9</span>                    
+                  </span>
+                  <span class="col-md-1 noPadding">
+                    <span class="col-md-6 noPadding numLine">10</span>
+                    <span class="col-md-6 noPadding numLine">11</span>                    
+                  </span>       
+                </span>
+              </div>
+          </div>
+          <!-- Bottom third portion of the body -->
+          <div class="row hourMargin">
+            <div class="col-md-1 noPadding ">
+              <div id="12amBottom" class="col-md-6 oneHour schedBottom noPadding leftBorder">             
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>               
+              </div>
+              <div id="1amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="2amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="3amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="4amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="5amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="6amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="7amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="8amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="9amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="10amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="11amBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding">
+              <div id="12pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="1pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="2pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="3pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="4pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="5pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="6pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="7pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="8pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="9pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+            <div class="col-md-1 noPadding ">
+              <div id="10pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>
+              <div id="11pmBottom" class="col-md-6 oneHour schedBottom noPadding">
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">15</span></div>
+                <div class="col-md-3 noPadding tickMark lrgLen"><span class="tickNum">30</span></div>
+                <div class="col-md-3 noPadding tickMark midLen"><span class="tickNum">45</span></div>  
+              </div>            
+            </div>
+          </div>        
+        </div>
+      </div>
+      <div id="buttonRow" class="row noPadding buttonRow">
+        <div class="col-md-3 button left">
+          <button id="prevSchedButton" class="btn btn-default btn-arrow-left changeDay">Manage the Previous Day</button>
+        </div>
+        <div class="col-md-6">        
+          <button id="schedButton" class="btn btn-primary btn-lrg schedButton">Add this to your schedule</button> 
+        </div>
+        <div class="col-md-offset-3 low-button right">                   
+          <button id="nextSchedButton" class="btn btn-default btn-arrow-right changeDay">Manage the Next Day</button>
+        </div>
+      </div>            
+    </div>
